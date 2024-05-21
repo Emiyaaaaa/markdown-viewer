@@ -17,6 +17,9 @@
 		"strings": "on"
 	},
 	"workbench.editor.empty.hint": "hidden",
+	"xo.enable": false,
+	"xo.format.enable": false,
+	"biome.enabled": true,
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "biomejs.biome",
 	"editor.codeActionsOnSave": {
@@ -33,4 +36,5 @@
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
+	"eslint.enable": false,
 }

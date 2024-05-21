@@ -1,13 +1,8 @@
-import "github-markdown-css/github-markdown.css";
-import { MDXRemote } from "next-mdx-remote/rsc";
+import Markdown from "./markdown";
+import Input from "./input";
 
 export default async function Home(props: { searchParams: { url?: string } }) {
-	const res = await fetch(props.searchParams.url!);
-	const markdown = await res.text();
+  const url = props.searchParams.url
 
-	return (
-		<main className="markdown-body">
-			<MDXRemote source={markdown} />
-		</main>
-	);
+	return url ? <Markdown url={url} /> : <Input />;
 }

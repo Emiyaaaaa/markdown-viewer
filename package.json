@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"build": "next build",
-		"dev": "next dev",
+		"dev": "next dev -p 3001",
 		"lint": "next lint",
 		"start": "next start"
 	},
@@ -13,7 +13,8 @@
 		"next": "14.2.3",
 		"next-mdx-remote": "^4.4.1",
 		"react": "^18",
-		"react-dom": "^18"
+		"react-dom": "^18",
+		"unicode-escapes": "^1.0.0"
 	},
 	"devDependencies": {
 		"@emiyaaaaa/biomeconfig": "^1.0.0",
