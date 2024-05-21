@@ -7,7 +7,7 @@ Markdown Viewer is a simple web application that allows you to view and parse on
  - Open source
 
 ## How to use
- - Just open https://markdown-viewer-one.vercel.app/?url=[your markdown file]
+ - Just open https://markdown-viewer-one.vercel.app/?url=[YOUR_MARKDOWN_ONLINE_FILE]
  - Here is a demo: https://markdown-viewer-one.vercel.app/?url=https://github.com/Emiyaaaaa/markdown-viewer/blob/main/README.md
 
 ## Contributing
