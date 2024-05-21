@@ -1,13 +1,24 @@
-body {
-  color: #1F2328;
-  background: #ffffff;
+:root {
+  --font-color: #1F2328;
+  --bg-color: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    color: #e6edf3;
-    background: #0d1117
+  :root {
+    --font-color: #e6edf3;
+    --bg-color: #0d1117;
   }
+}
+
+body {
+  color: var(--font-color);
+  fill: var(--font-color);
+  background: var(--bg-color);
+}
+
+input {
+  color: var(--font-color);
+  caret-color: var(--font-color);
 }
 
 html, body {
@@ -73,8 +84,6 @@ body {
   min-width: 50px;
   font-size: 18px;
   font-weight: 500;
-  color: #ededed;
-  caret-color: #e6edf3;
 }
 
 .input-container button {

@@ -1,6 +1,7 @@
 import "github-markdown-css/github-markdown.css";
 import { MDXRemote } from "next-mdx-remote/rsc";
-import { parseGithubMarkdown } from "./utils";
+import { parseGithubMarkdown } from "../utils";
+import { Header } from "./header";
 
 export default async function Markdown(props: { url: string }) {
   const markdown = await fetch(props.url).then(res => res.text()).then((text) => {
@@ -19,8 +20,11 @@ export default async function Markdown(props: { url: string }) {
   })
 
 	return (
+    <>
+    <Header />
 		<main className="markdown-body">
 			{markdown}
 		</main>
+    </>
 	);
 }
