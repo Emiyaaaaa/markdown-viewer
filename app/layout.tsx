@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Markdown online viewer",
   description: "parse markdown links and view them online",
+  keywords: ["markdown", "viewer", "online"],
 };
 
 export default function RootLayout({
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/favicon.ico" />
       <body className={inter.className}>
         {children}
       </body>
