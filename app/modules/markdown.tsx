@@ -2,7 +2,7 @@ import "github-markdown-css/github-markdown.css";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { parseGithubMarkdown } from "../utils";
 
-export const revalidate = 60
+export const revalidate = 600
 
 export default async function Markdown(props: { url: string }) {
   const markdown = await fetch(props.url, { next: { revalidate } }).then(res => res.text()).then((text) => {
