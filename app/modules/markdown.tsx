@@ -20,12 +20,9 @@ export default async function Markdown(props: { url: string }) {
   })
 
 	return (
-    <>
-    <Header />
 		<main className="markdown-body">
 			{markdown}
 		</main>
-    </>
 	);
 }
 
