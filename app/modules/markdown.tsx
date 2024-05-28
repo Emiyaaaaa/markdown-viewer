@@ -28,3 +28,5 @@ export default async function Markdown(props: { url: string }) {
     </>
 	);
 }
+
+export const revalidate = 600

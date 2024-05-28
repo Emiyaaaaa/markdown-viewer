@@ -6,8 +6,6 @@ export default function Input() {
   const [value, setValue] = useState("");
 
 	return (
-    <>
-    <Header />
     <main className="input-container">
       <div className="input-wrapper">
 		  <input placeholder="https://example.md" autoFocus className="" onChange={e => setValue(e.target.value)} />
@@ -17,7 +15,5 @@ export default function Input() {
       </div>
       <desc>Input a online markdown file uri, get a online preview markdown link.</desc>
     </main>
-    </>
-
 	);
 }
