@@ -4,7 +4,7 @@ import { parseGithubMarkdown } from "../utils";
 import { Header } from "./header";
 
 export default async function Markdown(props: { url: string }) {
-  const markdown = await fetch(props.url).then(res => res.text()).then((text) => {
+  const markdown = await fetch(props.url, { next: { revalidate: 60 * 10 } }).then(res => res.text()).then((text) => {
     if (text.trimStart().startsWith('<!DOCTYPE html>')) {
       const __html = parseGithubMarkdown(text, props.url)
       if (__html) {
