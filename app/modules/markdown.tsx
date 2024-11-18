@@ -13,7 +13,7 @@ export default function Markdown(props: { url: string }) {
 		let data: string | undefined;
 
 		// client fetch
-		data = await fetch(props.url)
+		data = await fetch(props.url, { signal: AbortSignal.timeout(10000) })
 			.then((res) => res.text())
 			.catch((err) => {
 				console.log("client fetch error", err);
@@ -57,8 +57,14 @@ export default function Markdown(props: { url: string }) {
 	if (!__html) return null;
 
 	return (
-		<main className="markdown-body">
-			<div dangerouslySetInnerHTML={{ __html }} />
-		</main>
+		<>
+			<main className="markdown-body">
+				<div dangerouslySetInnerHTML={{ __html }} />
+			</main>
+			<footer className="powered-by">
+				<span>markdown viewer powered by </span>
+				<a href="https://github.com/Emiyaaaaa">emiya</a>
+			</footer>
+		</>
 	);
 }
