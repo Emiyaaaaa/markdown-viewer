@@ -1,6 +1,4 @@
 {
-	"typescript.tsdk": "node_modules/typescript/lib",
-	"typescript.enablePromptUseWorkspaceTsdk": true,
 	"cSpell.words": [
 		"Beian",
 		"editorjs",
@@ -13,12 +11,9 @@
 	"files.associations": {
 		"*.scss": "tailwindcss"
 	},
-	"editor.quickSuggestions": {
-		"strings": "on"
-	},
 	"workbench.editor.empty.hint": "hidden",
 	"xo.enable": false,
-	"xo.format.enable": false,
+	"eslint.enable": false,
 	"biome.enabled": true,
 	"editor.formatOnSave": true,
 	"editor.defaultFormatter": "biomejs.biome",
@@ -36,5 +31,4 @@
 	"[typescriptreact]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
-	"eslint.enable": false,
 }
