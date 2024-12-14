@@ -62,7 +62,10 @@ export default function Markdown(props: { url: string }) {
 				<div dangerouslySetInnerHTML={{ __html }} />
 			</main>
 			<footer className="powered-by">
-				<span>markdown viewer powered by </span>
+				<a href="https://github.com/Emiyaaaaa/markdown-viewer">
+					markdown-viewer
+				</a>
+				<span> powered by </span>
 				<a href="https://github.com/Emiyaaaaa">emiya</a>
 			</footer>
 		</>

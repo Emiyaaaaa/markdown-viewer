@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.9.4",
-		"@emiyaaaaa/biomeconfig": "^1.2.0",
+		"@emiyaaaaa/biomeconfig": "^1.3.0",
 		"@emiyaaaaa/tsconfig": "^1.0.2",
 		"@types/node": "^20",
 		"@types/react": "^18",
